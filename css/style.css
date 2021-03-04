@@ -1,0 +1,175 @@
+@import url('https://fonts.googleapis.com/css2?family=RocknRoll+One&display=swap');
+
+body{
+    background: url("../img/fondo1.png");
+    font-family: 'RocknRoll One', sans-serif;
+}
+
+.contenedor{
+    width: 90%;
+    margin: 0 auto;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+
+    box-shadow: 0px 0px 15px grey;
+    background: white;
+}
+
+.fila{
+    margin-bottom: 20px;
+}
+
+header{
+    width: 100%;
+    background: url("../img/skyline.jpg");
+    text-align: center;
+    font-size: 25px;
+}
+
+.porcentajes{
+    width: 100%;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.porcentaje{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.tipo{
+    font-weight: bold;
+}
+
+.numero{
+    background-color: ghostwhite;
+    box-shadow: 0px 0px 5px gray;
+
+    padding: 2px;
+    margin-left: 10px;
+}
+
+form{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+form > *{
+    margin-right: 25px;
+}
+
+.formulario{
+    width: 100%;
+
+    background-color: lightblue;
+
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.contenedor_ciudad{
+    width: 90%;
+    margin: 0 auto;
+
+    background-color: rgb(248, 248, 255);
+    box-shadow: 0px 0px 10px grey;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+
+    margin-bottom: 20px;
+}
+
+.fila_ciudad{
+    width: 90%;
+    margin-bottom: 20px;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: stretch;
+
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.tipo_poblacion{
+    width: 25%;
+    text-align: center;
+    
+    font-weight: bold;
+    font-size: 40px;
+
+    background-color: lightgray;
+
+}
+
+.poblacion{
+    width: 70%;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-wrap: wrap;
+
+}
+
+.persona{
+    width: 20%;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+
+    background-color: ghostwhite;
+    box-shadow: 0px 0px 10px gray;
+
+    margin: 10px;
+    padding: 5px;
+
+}
+
+.persona > *{
+    width: 100%;
+}
+
+.datos{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.dato{
+    width: 100%;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+
+    border-bottom: 1px solid grey;
+    margin-bottom: 5px;
+}
+
+.nombre{
+    font-weight: bold;
+    text-align: center;
+
+    background-color: lightgray;
+}
