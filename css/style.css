@@ -78,6 +78,10 @@ form > *{
     padding-bottom: 10px;
 }
 
+.formulario label{
+    font-weight: bold;
+}
+
 .contenedor_ciudad{
     width: 90%;
     margin: 0 auto;
@@ -137,7 +141,7 @@ form > *{
     align-items: flex-start;
 
     background-color: ghostwhite;
-    box-shadow: 0px 0px 10px gray;
+    box-shadow: 0px 0px 5px gray;
 
     margin: 10px;
     padding: 5px;
@@ -163,7 +167,9 @@ form > *{
     justify-content: space-between;
     align-items: flex-start;
 
-    border-bottom: 1px solid grey;
+    flex-wrap: wrap;
+
+    border-bottom: 1px solid lightgrey;
     margin-bottom: 5px;
 }
 
@@ -171,5 +177,11 @@ form > *{
     font-weight: bold;
     text-align: center;
 
+    font-size: 2vh;
+
     background-color: lightgray;
+}
+
+.valor{
+    font-weight: bold;
 }

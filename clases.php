@@ -3,7 +3,7 @@
     class Creador{
         //    ATRIBUTOS
         public static $cantidad;
-        public const ciudad = "Ciudad Porcentaje";
+        public const ciudad = "Ciudad Objeto";
         private static $porcentajes = [
             "policias" => 0.05,
             "tenderos" => 0.1,
@@ -93,7 +93,7 @@
                 if($key != "nombre"){
                     echo "
                         <div class='dato'>
-                            <span class='clave'>".$key.":</span>
+                            <span class='clave'>".$key."</span>
                             <span class='valor'>".$value."</span>
                         </div>
                     ";

@@ -15,7 +15,7 @@
 
     <div class="contenedor">
         <header class="fila">
-            <h1>Ciudad objeto</h1>
+            <h1><?=Creador::ciudad;?></h1>
         </header>
         <div class="fila porcentajes">
         <?php foreach(Creador::getPorcentajes() as $tipo => $porcentaje):?>
