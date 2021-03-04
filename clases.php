@@ -17,9 +17,11 @@
 
             //echo var_dump($poblaciones);
             
-            foreach ($poblaciones as $key => $value) {
-                $poblaciones[$key] = round($value * self::$cantidad);
+            foreach ($poblaciones as $tipo => $porcentaje) {
+                $poblaciones[$tipo] = round($porcentaje * self::$cantidad);
             }
+
+            //$poblaciones = self::redondearCifras($poblaciones);
 
             echo 
             "<div class='contenedor_ciudad'>";
@@ -51,6 +53,37 @@
             echo"
             </div>";
         }
+
+        /*
+        protected static function redondearCifras($array_porcentajes){
+            $array_final = $array_porcentajes;
+            $array_claves_ordenado = [];
+            $clave_del_mayor = "";
+            
+            $contador = 0;
+
+            foreach ($array_porcentajes as $clave => $valor) {
+                if($contador == 0){
+                    $clave_del_mayor = $clave;
+                }
+                else{
+                    if($valor % 1 > $array_porcentajes[$clave] % 1){
+                        $clave_del_mayor = $clave;
+                    }
+                }
+                $contador++;
+            }
+
+            foreach ($array_porcentajes as $clave => $valor) {
+                $valor_a_insertar = floor($valor);
+                if($clave == $clave_del_mayor){
+                    $valor_a_insertar++;
+                }
+                $array_final[$clave] = $valor_a_insertar;
+            }
+            return $array_final;     
+        }
+        */
     
         //    GETTERS
 

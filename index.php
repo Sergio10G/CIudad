@@ -46,6 +46,7 @@
                 echo "<div class='fila' style='text-align: center; width: 100%;'><h1>Aquí se generará tu ciudad</h1>";
                 echo "<h2>¡Adelante, introduce un valor a la población total!</h2></div>";
             }
+            echo "".(170 % 100);
         ?>
     </div>
 </body>
